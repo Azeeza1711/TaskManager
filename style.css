@@ -1,0 +1,116 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+  }  
+  
+  body {  
+    background-image: url('./asserts/wmremove-transformed (1).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;  
+    background-color: #f4f4f9;  
+    color: #333;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    min-height: 100vh;  
+  }  
+  
+  .container {  
+    background: #fff;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    width: 100%;  
+    max-width: 500px;  
+  }  
+  
+  h1 {  
+    text-align: center;  
+    margin-bottom: 20px;  
+  }  
+  
+  #taskForm {  
+    display: flex;  
+    flex-direction: column;  
+    gap: 10px;  
+  }  
+  
+  #taskForm input,  
+  #taskForm textarea {  
+    padding: 10px;  
+    border: 1px solid #ddd;  
+    border-radius: 4px;  
+    font-size: 16px;  
+  }  
+  
+  #taskForm button {  
+    padding: 10px;  
+    background-color: #28a745;  
+    color: #fff;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+    font-size: 16px;  
+  }  
+  
+  #taskForm button:hover {  
+    background-color: #218838;  
+  }  
+  
+  .filters {  
+    margin: 20px 0;  
+  }  
+  
+  #filterStatus {  
+    padding: 5px;  
+    border-radius: 4px;  
+  }  
+  
+  #taskList {  
+    list-style: none;  
+  }  
+  
+  .task-item {  
+    background: #f9f9f9;  
+    padding: 10px;  
+    margin-bottom: 10px;  
+    border-radius: 4px;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    border: 1px solid #ddd;  
+  }  
+  
+  .task-item.completed {  
+    background-color: #d4edda;  
+    border-color: #c3e6cb;  
+  }  
+  
+  .task-item .task-actions {  
+    display: flex;  
+    gap: 10px;  
+  }  
+  
+  .task-item button {  
+    padding: 5px 10px;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+  }  
+  
+  .task-item button.edit {  
+    background-color: #ffc107;  
+    color: #333;  
+  }  
+  
+  .task-item button.delete {  
+    background-color: #dc3545;  
+    color: #fff;  
+  }  
+  
+  .task-item button.toggle-status {  
+    background-color: #007bff;  
+    color: #fff;  
+  }  
